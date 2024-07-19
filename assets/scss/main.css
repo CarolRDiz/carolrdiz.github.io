@@ -396,6 +396,25 @@ p {
   fill: white;
 }
 
+.tags {
+  display: flex;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+  row-gap: 8px;
+}
+
+.tags__tag {
+  background-color: rgba(53, 160, 121, 0.1921568627);
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.tags__tag span {
+  opacity: 100%;
+  color: var(--color-primary);
+}
+
 * {
   font-family: "SF Pro", "Inter", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -427,30 +446,9 @@ p, span {
   line-height: 1.5;
 }
 
-body {
-  background-color: #0b1b15;
-  padding-bottom: 100px;
-  padding-top: 40px;
-  padding-left: 14px;
-  padding-right: 14px;
-}
-
-.heading {
-  align-items: center;
-  row-gap: 8px;
-}
-
-.intro {
-  font-size: 20px;
-  opacity: 100%;
-}
-
-.contact {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 15px;
+.theme {
+  --color-background: #0b1b15;
+  --color-primary: #00ffa2;
 }
 
 .section, .project,
@@ -490,11 +488,11 @@ body {
 
 .project:hover h3,
 .experience:hover h3 {
-  color: #00ffa2;
+  color: var(--color-primary);
 }
 .project:hover .icon,
 .experience:hover .icon {
-  fill: #00ffa2;
+  fill: var(--color-primary);
   transition: transform 0.15s;
   transform: translate(5px, -5px) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
 }
@@ -513,21 +511,28 @@ body {
   flex-direction: column;
 }
 
-.tags {
-  display: flex;
-  -moz-column-gap: 5px;
-       column-gap: 5px;
-  flex-wrap: wrap;
-  margin-top: 16px;
+.header {
+  align-items: center;
   row-gap: 8px;
 }
 
-.tags__tag {
-  background-color: rgba(53, 160, 121, 0.1921568627);
-  border-radius: 10px;
-  padding: 5px 10px;
-}
-.tags__tag span {
+.intro {
+  font-size: 20px;
   opacity: 100%;
-  color: #00ffa2;
+}
+
+body {
+  background-color: var(--color-background);
+  padding-bottom: 100px;
+  padding-top: 40px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.contact {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 15px;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,19 @@
+.tags {
+    display: flex;
+    column-gap: 5px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+    row-gap: 8px;
+}
+
+.tags__tag {
+    background-color: #35a07931;
+    border-radius: 10px;
+
+    padding: 5px 10px;
+
+    span {
+        opacity: 100%;
+        color: var(--color-primary);
+    }
+}
