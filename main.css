@@ -1,0 +1,12 @@
+body {
+  background-color: #F2E5D5;
+}
+
+.section {
+  display: flex;
+  padding: 0 400px;
+}
+
+.portrait-image {
+  width: 50%;
+}/*# sourceMappingURL=main.css.map */

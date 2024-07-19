@@ -1,0 +1,16 @@
+.icon--social {
+    width: 24px;
+    filter: brightness(0) invert(1);
+    opacity: 70%;
+
+}
+.icon--social:hover {
+    opacity: 100%;
+}
+
+.icon {
+    width: 15px;
+    height: auto;
+    transition: transform 0.15s;
+    fill: white;
+}
